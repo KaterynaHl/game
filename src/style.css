@@ -1,0 +1,25 @@
+
+body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .game-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .circle {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  .start-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
