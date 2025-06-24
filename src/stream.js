@@ -1,8 +1,9 @@
 // генератор, що поступово видає "потоки" даних з затримкою
 export async function* streamGenerator() {
     for (let i = 0; i < 20; i++) {
-      yield `Chunk ${i + 1}`; 
-      await new Promise((res) => setTimeout(res, 100)); 
+      yield `Chunk ${i + 1}`;
+      await new Promise((res) => setTimeout(res, 100));
+    }
   }
   
   export async function runStreamDemo(elementId) {
@@ -14,4 +15,3 @@ export async function* streamGenerator() {
       el.appendChild(div);
     }
   }
-}
