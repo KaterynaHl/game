@@ -5,7 +5,7 @@ const pads = ["red", "green", "blue", "yellow"];
 export default function game() {
   const [sequence, setSequence] = useState([]);
   const [userIndex, setUserIndex] = useState(0);
-  const [message, setMessage] = useState("Click Start");
+  const [message, setMessage] = useState("Натискай початок");
   const [active, setActive] = useState(null);
 
   const colorCycleGenerator = function* () {
@@ -59,7 +59,7 @@ export default function game() {
 
   return (
     <div className="game-container">
-      <h1>Simon Says</h1>
+      <h1>Гра</h1>
       <p>{message}</p>
       <div className="circle">
         {pads.map((color) => (
@@ -70,7 +70,7 @@ export default function game() {
           />
         ))}
       </div>
-      <button className="start-btn" onClick={startGame}>Start</button>
+      <button className="start-btn" onClick={startGame}>Початок</button>
     </div>
   );
 }
